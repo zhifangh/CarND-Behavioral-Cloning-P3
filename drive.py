@@ -12,9 +12,12 @@ from PIL import Image
 from flask import Flask
 from io import BytesIO
 
-from keras.models import load_model
+# from keras.models import load_model
+from tensorflow.python.keras.utils import generic_utils
+from tensorflow.keras.models import load_model
 import h5py
-from keras import __version__ as keras_version
+# from keras import __version__ as keras_version
+from tensorflow.keras import __version__ as keras_version
 
 sio = socketio.Server()
 app = Flask(__name__)
